@@ -1,6 +1,9 @@
 <?php
 /**
  * @description 面包屑组件
+ * 
+ * @see https://github.com/Rich4st/base/blob/main/preview/base-breadcrumbs.jpg?raw=true
+ * 
  * @param array $args
  * @param array $args['breadcrumbs'] 面包屑数组
  * @param string $args['breadcrumbs']['name'] 面包屑名称

@@ -1,6 +1,9 @@
 <?php
 /**
  * @description 瀑布流展示文章列表，展示标题、和分类 点击跳转到该分类页面显示分类下的所有文章
+ * 
+ * @see https://github.com/Rich4st/base/blob/main/preview/post-category.jpg?raw=true
+ * 
  * @param array $args
  * @param string $args['pageSize'] 每页显示的文章数量
  * @param string $args['orderby'] 排序方式

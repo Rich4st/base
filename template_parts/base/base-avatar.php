@@ -1,6 +1,9 @@
 <?php 
 /**
  * @descrption 头像组件
+ * 
+ * @see https://github.com/Rich4st/base/blob/main/preview/base-avatar.jpg?raw=true
+ * 
  * @param string $avatar 头像图片名称
  * @param string $content 头像下方的文字内容
  * @param string $name 头像下方的名字

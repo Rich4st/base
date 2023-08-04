@@ -1,6 +1,9 @@
 <?php 
 /**
  * @description 用于文章内部的导航, 上一篇和下一篇
+ * 
+ * @see @see https://github.com/Rich4st/base/blob/main/preview/post-navigation.jpg?raw=true
+ * 
  */
 ?>
 

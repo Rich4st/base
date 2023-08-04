@@ -1,6 +1,9 @@
 <?php
 /**
  * @description 当前分类下的文章列表页面
+ * 
+ * @see https://github.com/Rich4st/base/blob/main/preview/post-category-list.jpg?raw=true
+ * 
  */
 ?>
 
