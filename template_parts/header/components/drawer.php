@@ -2,7 +2,7 @@
 /**
  * @description 移动端头部导航栏菜单弹出层
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/drawer-base.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/drawer-base.jpg?raw=true
  * 
  * @param bool $with-close 是否显示关闭按钮
  * 

@@ -2,7 +2,7 @@
 /**
  * @description 基础footer组件
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/footer-base.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/footer-base.jpg?raw=true
  * 
  */
 ?>

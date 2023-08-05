@@ -2,7 +2,7 @@
 /**
  * @description 内容footer1
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/footer-centered1.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/footer-centered1.jpg?raw=true
  * 
  */
 ?>

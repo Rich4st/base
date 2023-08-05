@@ -2,7 +2,7 @@
 /**
  * @description 水平展示文章图片、和标题，点击full detail跳转到文章详情
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/post-horizontal.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/post-horizontal.jpg?raw=true
  * 
  * @param array $args
  * @param string $args['pageSize'] 每页显示的文章数量

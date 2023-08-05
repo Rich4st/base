@@ -2,7 +2,7 @@
 /**
  * @description 瀑布流显示文章缩略图、标题描述及时间
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/post-pool.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/post-pool.jpg?raw=true
  * 
  * @param array $args
  * @param string $args['pageSize'] 每页显示的文章数量

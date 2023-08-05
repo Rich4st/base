@@ -2,9 +2,9 @@
 /**
  * @description headder1 左侧弹出层
  * 
- * @see drawer: https://github.com/Rich4st/base/blob/main/preview/drawer-base.jpg?raw=true
- * @see mobile: https://github.com/Rich4st/base/blob/main/preview/header1-mobile.jpg?raw=true
- * @see mobile: https://github.com/Rich4st/base/blob/main/preview/header1-pc.jpg?raw=true
+ * @see drawer: https://github.com/Rich4st/base/blob/develop/preview/drawer-base.jpg?raw=true
+ * @see mobile: https://github.com/Rich4st/base/blob/develop/preview/header1-mobile.jpg?raw=true
+ * @see mobile: https://github.com/Rich4st/base/blob/develop/preview/header1-pc.jpg?raw=true
  * 
  */
 ?>

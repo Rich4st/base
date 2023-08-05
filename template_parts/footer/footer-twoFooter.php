@@ -2,7 +2,7 @@
 /**
  * @description 两栏式页脚
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/footer-twoFooter.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/footer-twoFooter.jpg?raw=true
  * 
  */
 ?>
