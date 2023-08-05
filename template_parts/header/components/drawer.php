@@ -14,7 +14,7 @@
 
 $withClose = $args['with-close'] ?? false;
 
-$drawerClass = 'menu h-screen px-4 py-8 min-w-[20rem] bg-base-200 text-base-content font-rockwell ' . ($args['drawer-class'] ?? '');
+$drawerClass = 'menu h-screen px-4 py-12 min-w-[20rem] bg-base-200 text-base-content font-rockwell ' . ($args['drawer-class'] ?? '');
 
 $menuClass = 'header-nav text-xl hover:text-gray-600 space-y-4 py-8 ' . ($args['menu-class'] ?? '');
 ?>
