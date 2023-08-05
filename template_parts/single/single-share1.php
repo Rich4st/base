@@ -1,3 +1,10 @@
+<?php 
+/**
+ * @description : 文章详情页分享模块
+ * 
+ * @see https://github.com/Rich4st/base/blob/develop/preview/single-share1.jpg?raw=true
+ */
+?>
 <div class="border-t py-4">
   <p class="text-sm font-serif mb-4">
     Share this:

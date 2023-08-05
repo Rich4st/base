@@ -1,3 +1,10 @@
+<?php 
+/**
+ * @description : 文章详情页头部1 带作者信息及分享按钮
+ * 
+ * @see https://github.com/Rich4st/base/blob/develop/preview/single-header1.jpg?raw=true
+ */
+?>
 <h1 class="text-center font-bold text-3xl lg:text-4xl font-copp py-8">
   <?php the_title(); ?>
 </h1>
