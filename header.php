@@ -13,19 +13,4 @@
 
 <body>
 
-  <header class="py-8 px-4 lg:max-w-6xl lg:mx-auto">
-    <ul class="flex justify-between items-center">
-      <li class="order-2 lg:order-0">
-        <h1 class="text-4xl font-extrabold font-bondoni">
-          <a href="">Capalot</a>
-        </h1>
-      </li>
-      <li class="order-1">
-        <?php get_template_part('template_parts/header/header', 'nav'); ?>
-        <?php get_template_part('template_parts/header/header', 'drawer'); ?>
-      </li>
-      <li class="order-3">
-        <?php get_template_part('template_parts/header/header', 'action'); ?>
-      </li>
-    </ul>
-  </header>
+  <?php get_template_part('template_parts/header/header', '1') ?>
