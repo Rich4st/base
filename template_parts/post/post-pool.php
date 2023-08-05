@@ -5,13 +5,13 @@
  * @see https://github.com/Rich4st/base/blob/develop/preview/post-pool.jpg?raw=true
  * 
  * @param array $args
- * @param string $args['pageSize'] 每页显示的文章数量
+ * @param string $args['page-size'] 每页显示的文章数量
  * @param string $args['orderby'] 排序方式
  * @param string $args['order'] 排序顺序
  */
 $args = array(
   'post_type' => 'post',
-  'posts_per_page' => $args['pageSize'] ?? -1,
+  'posts_per_page' => $args['page-size'] ?? -1,
   'orderby' => $args['orderby'] ?? 'date',
   'order' => $args['order'] ?? 'DESC',
 );

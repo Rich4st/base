@@ -7,9 +7,10 @@
  * 
  */
 
-$class = 'footer footer-center p-10 bg-primary text-primary-content ' . ($args['extra-class'] ?? '');
+$class = 'footer footer-center p-10 ' . ($args['extra-class'] ?? '');
 ?>
 
+<?php wp_footer() ?>
 <footer class="<?php echo $class; ?>">
   <div>
     <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="inline-block fill-current">
@@ -18,6 +19,23 @@ $class = 'footer footer-center p-10 bg-primary text-primary-content ' . ($args['
     <p class="font-bold">
       ACME Industries Ltd. <br />Providing reliable tech since 1992
     </p>
+    <ul class="flex gap-4">
+      <li>
+        <a href="">@tag1</a>
+      </li>
+      <li>
+        <a href="">@tag2</a>
+      </li>
+      <li>
+        <a href="">@tag3</a>
+      </li>
+      <li>
+        <a href="">@tag4</a>
+      </li>
+      <li>
+        <a href="">@tag5</a>
+      </li>
+    </ul>
     <p>Copyright © 2023 - All right reserved</p>
   </div>
   <div>

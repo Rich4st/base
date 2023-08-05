@@ -7,17 +7,8 @@
  * @see mobile: https://github.com/Rich4st/base/blob/develop/preview/header2-mobile.jpg?raw=true
  * @see mobile: https://github.com/Rich4st/base/blob/develop/preview/header2-pc.jpg?raw=true
  * 
- * @param string $top-container-class 顶部容器类名
- * @param string $top-class 顶部类名
+ * @param string $extra-class 额外的class
  * 
- * @param string $bottom-container-class 底部容器类名
- * @param string $bottom-class 底部类名
- * 
- * @example get_template_part('template_parts/header/header', '2', array(
- * 'top-container-class' => 'bg-[#fff6e9]',
- * 'top-class' => 'lg:max-w-7xl lg:mx-auto',
- * 'bottom-class' => 'lg:max-w-7xl lg:mx-auto'
- * ))
  */
 
 $topContainerClass = $args['top-container-class'] ?? '';
@@ -93,7 +84,7 @@ $bottomClass = 'flex items-center justify-between p-4 lg:px-8 w-full' . ' ' . ($
 <header class="$bottomContainerClass">
   <div class="<?php echo $bottomClass; ?>">
     <h1 class="text-2xl font-serif font-bold">
-      AL Capalot
+      <a href="<?php echo home_url() ?>">AL Capalot</a>
     </h1>
     <div class="relative">
       <input type="text" placeholder="Search..." class="input input-bordered input-[#fff6e9] w-full h-8 max-w-xs rounded-none text-sm lg:h-10 pr-8" />
