@@ -47,8 +47,8 @@ $all_posts = new WP_Query($args);
   ?>
       <li class="post-item">
         <?php if ($first_img) : ?>
-          <a href="<?php echo $post_link; ?>">
-            <img src="<?php echo $first_img; ?>" alt="">
+          <a class="block overflow-hidden" href="<?php echo $post_link; ?>">
+            <img class="h-64 w-full ax-w-full max-h-full object-cover hover:scale-110 duration-150 overflow-hidden" src="<?php echo $first_img; ?>" alt="">
           </a>
         <?php else : ?>
           <?php echo $post_thumbnail; ?>
