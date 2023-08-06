@@ -39,3 +39,12 @@
 .header-nav .current_page_item {
   text-decoration: underline;
 }
+
+#archive-sidebar li {
+  text-decoration: underline;
+}
+
+#archive-sidebar li:hover {
+  text-decoration: none;
+  color: #0ea5e9
+}
