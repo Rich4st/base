@@ -13,4 +13,4 @@
 
 <body>
 
-  <?php get_template_part('template_parts/header/header', '1') ?>
+  <?php get_template_part('template_parts/header/header', '3') ?>
