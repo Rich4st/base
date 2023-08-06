@@ -1,3 +1,10 @@
+<?php 
+/**
+ * @description 侧边栏组件
+ * 
+ * @see https://github.com/Rich4st/base/blob/develop/preview/base-sidebar.jpg?raw=true
+ */
+?>
 <aside>
   <ul class="text-xl font-serif space-y-12">
     <li>
