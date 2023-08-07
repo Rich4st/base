@@ -3,7 +3,7 @@
 /**
  * @descriotion 首页section 友情链接
  * 
- * @see https://github.com/Rich4st/base/blob/develop/preview/section1.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/section-1.jpg?raw=true
  * 
  * @param string title 标题
  * 

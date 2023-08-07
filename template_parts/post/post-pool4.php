@@ -43,7 +43,7 @@ $all_posts = new WP_Query($args);
         <div class="p-4">
           <div class="flex items-end justify-between">
             <div class=" font-serif text-sm">
-              <a class="block text-lg font-serif font-semibold pb-2 hover:underline line-clamp-2" href="$post_link"><?php the_title(); ?></a>
+              <a class="text-xl line-clamp-2 min-h-[3.5rem] hover:underline" href="$post_link"><?php the_title(); ?></a>
               <?php foreach ($post_category as $category) : ?>
                 <a class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
                   <?php echo $category->name; ?>
@@ -89,8 +89,8 @@ $all_posts = new WP_Query($args);
           <div class="p-4">
             <div class="flex items-end justify-between">
               <div class=" font-serif text-sm">
-                <a class="block text-lg font-serif font-semibold pb-2 hover:underline line-clamp-2" href="$post_link">
-                <p></p>
+                <a class="text-xl line-clamp-2 min-h-[3.5rem] hover:underline mb-1" href="$post_link">
+                  <p><?php echo $post_title ?></p>
                 </a>
                 <?php foreach ($post_category as $category) : ?>
                   <a class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
