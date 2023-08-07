@@ -2,7 +2,7 @@
 /**
  * @descrption 头像组件
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/base-avatar.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/base-avatar.jpg?raw=true
  * 
  * @param string $avatar 头像图片名称
  * @param string $content 头像下方的文字内容

@@ -28,6 +28,17 @@
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: 'Newsreader';
+  src: url('../fonts/Newsreader-Italic-VariableFont_opsz,wght.ttf') format('truetype'),
+    /* Modern Browsers */
+    url('../fonts/Newsreader-VariableFont_opsz,wght.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 .header-nav li {
   text-underline-offset: 0.3em;
 }
@@ -38,4 +49,13 @@
 
 .header-nav .current_page_item {
   text-decoration: underline;
+}
+
+#archive-sidebar li {
+  text-decoration: underline;
+}
+
+#archive-sidebar li:hover {
+  text-decoration: none;
+  color: #0ea5e9
 }

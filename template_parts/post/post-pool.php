@@ -2,16 +2,16 @@
 /**
  * @description 瀑布流显示文章缩略图、标题描述及时间
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/post-pool.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/post-pool.jpg?raw=true
  * 
  * @param array $args
- * @param string $args['pageSize'] 每页显示的文章数量
+ * @param string $args['page-size'] 每页显示的文章数量
  * @param string $args['orderby'] 排序方式
  * @param string $args['order'] 排序顺序
  */
 $args = array(
   'post_type' => 'post',
-  'posts_per_page' => $args['pageSize'] ?? -1,
+  'posts_per_page' => $args['page-size'] ?? -1,
   'orderby' => $args['orderby'] ?? 'date',
   'order' => $args['order'] ?? 'DESC',
 );
@@ -47,8 +47,8 @@ $all_posts = new WP_Query($args);
   ?>
       <li class="post-item">
         <?php if ($first_img) : ?>
-          <a href="<?php echo $post_link; ?>">
-            <img src="<?php echo $first_img; ?>" alt="">
+          <a class="block overflow-hidden" href="<?php echo $post_link; ?>">
+            <img class="h-64 w-full ax-w-full max-h-full object-cover hover:scale-110 duration-150 overflow-hidden" src="<?php echo $first_img; ?>" alt="">
           </a>
         <?php else : ?>
           <?php echo $post_thumbnail; ?>

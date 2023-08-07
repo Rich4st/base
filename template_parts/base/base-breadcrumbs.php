@@ -2,7 +2,7 @@
 /**
  * @description 面包屑组件
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/base-breadcrumbs.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/base-breadcrumbs.jpg?raw=true
  * 
  * @param array $args
  * @param array $args['breadcrumbs'] 面包屑数组

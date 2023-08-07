@@ -2,7 +2,7 @@
 /**
  * @description 瀑布流展示文章列表，展示标题、和分类 点击跳转到该分类页面显示分类下的所有文章
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/post-category.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/post-category.jpg?raw=true
  * 
  * @param array $args
  * @param string $args['pageSize'] 每页显示的文章数量
@@ -10,15 +10,19 @@
  * @param string $args['order'] 排序顺序
  * 
  */
-$args = array(
+$query_args = array(
   'post_type' => 'post',
-  'posts_per_page' => $args['pageSize'] ?? 4,
+  'posts_per_page' => $args['page-size'] ?? 4,
   'orderby' => $args['orderby'] ?? 'date',
   'order' => $args['order'] ?? 'DESC',
 );
-$all_posts = new WP_Query($args);
+$all_posts = new WP_Query($query_args);
+
+$ul_class = $args['ul-class'] ?? 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-8';
+
+$title_class = $args['title-class'] ?? '';
 ?>
-<ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 lg:gap-8">
+<ul class="<?php echo $ul_class; ?>">
   <?php
   if ($all_posts->have_posts()) :
     while ($all_posts->have_posts()) : $all_posts->the_post();
@@ -52,7 +56,7 @@ $all_posts = new WP_Query($args);
 
         <div class="my-4">
           <a class="block text-center mt-2 lg:mt-4 group" href="/category/<?php echo $post_categories[0]->name; ?>">
-            <span class=" font-meshedLight text-5xl font-thin underline group-hover:no-underline text-[#a7252c]">
+            <span class="<?php echo $title_class; ?>">
               <?php
               if ($post_categories) {
                 echo '<span>' . $post_categories[0]->name . '</span>';

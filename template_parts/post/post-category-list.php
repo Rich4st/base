@@ -1,33 +1,39 @@
 <?php
+
 /**
  * @description 当前分类下的文章列表页面
  * 
- * @see https://github.com/Rich4st/base/blob/main/preview/post-category-list.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/post-category-list.jpg?raw=true
  * 
  */
 ?>
 
 <?php
-get_header()
+get_header();
+
+$cat = get_category(get_query_var('cat'));
+
+$breadcrumbs = array(
+  'breadcrumbs' => array(
+    array(
+      'name' => 'Home',
+      'link' => home_url()
+    ),
+    array(
+      'name' => $cat->name,
+      'link' => get_category_link($cat->term_id)
+    )
+  )
+)
+
 ?>
 
-<main class="px-4 lg:max-w-6xl lg:mx-auto">
+<main class="px-4 pb-8 lg:max-w-6xl lg:mx-auto">
 
   <?php
   $cat = get_category(get_query_var('cat'));
 
-  get_template_part('template_parts/components/components', 'breadcrumbs', array(
-    'breadcrumbs' => array(
-      array(
-        'name' => 'Home',
-        'link' => home_url()
-      ),
-      array(
-        'name' => $cat->name,
-        'link' => get_category_link($cat->term_id)
-      )
-    )
-  ))
+  get_template_part('template_parts/base/base', 'breadcrumbs', $breadcrumbs)
   ?>
 
   <?php
