@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @description 瀑布流展示文章列表，展示标题、和分类 点击跳转到该分类页面显示分类下的所有文章
  * 
@@ -22,7 +23,7 @@ $ul_class = $args['ul-class'] ?? 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4
 
 $title_class = $args['title-class'] ?? '';
 ?>
-<ul class="<?php echo $ul_class; ?>">
+<ul class="<?php echo $ul_class; ?> grid grid-cols-2 md:grid-cols-3 px-8">
   <?php
   if ($all_posts->have_posts()) :
     while ($all_posts->have_posts()) : $all_posts->the_post();
@@ -49,7 +50,9 @@ $title_class = $args['title-class'] ?? '';
   ?>
       <li class="post-item">
         <?php if ($first_img) : ?>
-          <img src="<?php echo $first_img; ?>" alt="">
+          <a class="block overflow-hidden" href="<?php echo $post_link; ?>">
+            <img class="h-64 w-72 max-w-full max-h-full object-cover hover:scale-110 duration-150 overflow-hidden" src="<?php echo $first_img; ?>" alt="">
+          </a>
         <?php else : ?>
           <?php echo $post_thumbnail; ?>
         <?php endif; ?>
