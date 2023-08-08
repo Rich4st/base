@@ -2,7 +2,7 @@
 /**
  * @description 左右布局hero section
  * 
- * @see 
+ * @see https://github.com/Rich4st/base/blob/develop/preview/section-4.jpg?raw=true
  * 
  */
 ?>
