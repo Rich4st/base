@@ -33,7 +33,7 @@ $breadcrumbs = array(
   <?php
   $cat = get_category(get_query_var('cat'));
 
-  get_template_part('template_parts/base/base', 'breadcrumbs', $breadcrumbs)
+  get_template_part('template_parts/base/base-breadcrumbs', '', $breadcrumbs)
   ?>
 
   <?php
