@@ -12,7 +12,7 @@
 $title = $args['title'] ?? 'Trusted by the best'
 ?>
 
-<h2 class="text-xl font-bold font-serif pb-8"><?php echo $title ?></h2>
+<h2 class="text-2xl font-bold font-serif pb-8 text-center"><?php echo $title ?></h2>
 <ul class="flex flex-col md:flex-row gap-4 items-center justify-around">
   <li>
     <a href="">
