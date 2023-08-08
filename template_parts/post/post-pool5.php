@@ -11,7 +11,7 @@
  */
 $args = array(
   'post_type' => 'post',
-  'posts_per_page' => $args['pageSize'] ?? -1,
+  'posts_per_page' => $args['page-size'] ?? -1,
   'orderby' => $args['orderby'] ?? 'date',
   'order' => $args['order'] ?? 'DESC',
 );
@@ -46,13 +46,13 @@ $all_posts = new WP_Query($args);
   ?>
       <li class="post-item">
         <?php if ($first_img) : ?>
-          <img src="<?php echo $first_img; ?>" alt="">
+          <img class="rounded-2xl h-48 w-full max-w-full max-h-full object-cover" src="<?php echo $first_img; ?>" alt="">
         <?php else : ?>
           <?php echo $post_thumbnail; ?>
         <?php endif; ?>
 
         <div class="my-4">
-          <h2 class="text-2xl font-extrabold font-mono line-clamp-2 min-h-[4rem]"><?php echo $post_title; ?></h2>
+          <h2 class="text-2xl font-serif line-clamp-2 min-h-[4rem]" title="<?php echo $post_title; ?>"><?php echo $post_title; ?></h2>
           <p class="font-serif text-sm mt-2">
             <?php
             if ($post_tags) {

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @description 当前分类下的文章列表页面
+ * @description 当前分类下的文章列表页面, 只有在/category/xxx/页面下才会生效
  * 
  * @see https://github.com/Rich4st/base/blob/develop/preview/post-category-list.jpg?raw=true
  * 
