@@ -19,7 +19,7 @@ $args = array(
 $all_posts = new WP_Query($args);
 ?>
 
-<div class="flex flex-col lg:flex-row px-4 lg:px-0">
+<div class="flex flex-col lg:flex-row lg:px-0">
   <div class="shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-4 lg:mb-0 hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] duration-300 rounded-2xl" style="flex: 2;">
     <?php if ($all_posts->have_posts()) : $all_posts->the_post(); ?>
       <?php
