@@ -81,7 +81,7 @@ $bottomClass = 'flex items-center justify-between p-4 lg:px-8 w-full' . ' ' . ($
   </div>
 </header>
 
-<header class="$bottomContainerClass">
+<header class="<?php echo $bottomContainerClass ?>">
   <div class="<?php echo $bottomClass; ?>">
     <h1 class="text-2xl font-serif font-bold">
       <a href="<?php echo home_url() ?>">AL Capalot</a>
