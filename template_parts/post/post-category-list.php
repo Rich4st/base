@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @description 当前分类下的文章列表页面, 只有在/category/xxx/页面下才会生效
+ * @description 当前分类下的文章列表页面
  * 
  * @see https://github.com/Rich4st/base/blob/develop/preview/post-category-list.jpg?raw=true
  * 
@@ -20,8 +20,8 @@ $breadcrumbs = array(
       'link' => home_url()
     ),
     array(
-      'name' => $cat->name,
-      'link' => get_category_link($cat->term_id)
+      'name' => $cat->name ?? 'blog',
+      'link' => (get_category_link($cat->term_id ?? '')) ?? '/blog'
     )
   )
 )
@@ -89,13 +89,17 @@ $breadcrumbs = array(
 
       ?>
 
-      <li class="w-full lg:w-[40rem] list-none">
+      <li class="w-full lg:w-[40rem] list-none flex items-center">
         <a class="flex group" href="<?php echo $post_link; ?>">
-          <?php if ($first_img) : ?>
-            <img class="w-36 h-36 bg-contain bg-no-repeat" src="<?php echo $first_img; ?>" alt="">
-          <?php else : ?>
-            <?php echo $post_thumbnail; ?>
-          <?php endif; ?>
+
+          <div class="min-w-[9.375rem] min-h-[9.375rem]">
+            <?php if ($first_img) : ?>
+              <img class="w-[9.375rem] h-[9.375rem] object-cover" src="<?php echo $first_img; ?>" />
+            <?php else : ?>
+              <?php echo $post_thumbnail; ?>
+            <?php endif; ?>
+          </div>
+
           <div class="ml-4 lg:ml-8 flex flex-col justify-between">
             <div>
               <h2 class="text-xl font-serif group-hover:underline line-clamp-2"><?php the_title() ?></h2>
@@ -122,6 +126,3 @@ $breadcrumbs = array(
   </ul>
 
 </main>
-
-<?php
-get_footer() ?>

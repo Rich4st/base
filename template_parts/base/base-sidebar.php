@@ -5,7 +5,7 @@
  * @see https://github.com/Rich4st/base/blob/develop/preview/base-sidebar.jpg?raw=true
  */
 ?>
-<aside>
+<aside class="px-4">
   <ul class="text-xl font-serif space-y-12">
     <li>
       <h2 class="text-2xl pb-2">Categories</h2>
