@@ -61,7 +61,7 @@ $all_posts = new WP_Query($args);
               </a>
             <?php endforeach; ?>
           </div>
-          <a class="text-xl line-clamp-2 min-h-[3.75rem] hover:text-[#ed1f84] font-serif" href="<?php echo $post_title; ?>">
+          <a class="text-xl line-clamp-2 min-h-[3.75rem] hover:text-[#ed1f84] font-serif" href="<?php echo $post_link; ?>">
             <?php echo $post_title; ?>
           </a>
           <p class="text-xs text-gray-400 hover:text-[#ed1f84]">
