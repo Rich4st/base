@@ -12,7 +12,7 @@
       How do i get started with the nutrifit websit?
     </div>
     <div class="collapse-content">
-      <p>It was originally taken from a Latin text written by a Roman Scholar, Sceptic and Philosopher by the name of Marcus Tullius Cicero, who influenced the Latin language greatly.</p>
+      <p class="text-sm text-gray-500">It was originally taken from a Latin text written by a Roman Scholar, Sceptic and Philosopher by the name of Marcus Tullius Cicero, who influenced the Latin language greatly.</p>
     </div>
   </li>
   <li tabindex="1" class="collapse collapse-plus border border-base-300 bg-base-200">
