@@ -7,7 +7,7 @@
  * 
  */
 ?>
-<div class="flex flex-col p-8 lg:p-10 font-[system-ui] ">
+<div class="p-8 lg:p-10 font-[system-ui] ">
     <div class="py-4 font-sans text-xl lg:text-3xl">Comments on our services</div>
     <div class="flex lg:flex-row flex-col space-y-4">
         <div class="lg:w-1/3 lg:p-10">
