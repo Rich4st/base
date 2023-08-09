@@ -91,8 +91,8 @@ $all_posts = new WP_Query($args);
       ?>
     </li>
 
-    <li>共 <?php echo $all_posts->max_num_pages ?> 页</li>
+    <li>total <?php echo $all_posts->max_num_pages ?> Page(s)</li>
 
-    <li><?php echo $all_posts->found_posts ?> 篇文章</span>
+    <li><?php echo $all_posts->found_posts ?> post(s)</span>
   </ul>
 </ul>
