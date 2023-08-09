@@ -3,7 +3,7 @@
 /**
  * @descriotion 首页section 友情链接
  * 
- * @see https://github.com/Rich4st/base/blob/develop/preview/section1.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/section-1.jpg?raw=true
  * 
  * @param string title 标题
  * 
@@ -12,7 +12,7 @@
 $title = $args['title'] ?? 'Trusted by the best'
 ?>
 
-<h2 class="text-xl font-bold font-serif pb-8"><?php echo $title ?></h2>
+<h2 class="text-2xl font-bold font-serif pb-8 text-center"><?php echo $title ?></h2>
 <ul class="flex flex-col md:flex-row gap-4 items-center justify-around">
   <li>
     <a href="">

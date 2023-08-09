@@ -33,16 +33,19 @@ $breadcrumbs = array(
   <?php
   $cat = get_category(get_query_var('cat'));
 
-  get_template_part('template_parts/base/base', 'breadcrumbs', $breadcrumbs)
+  get_template_part('template_parts/base/base-breadcrumbs', '', $breadcrumbs)
   ?>
 
   <?php
-  // 查询出当前分类下的所有文章 
+  // 查询出当前归档日期下的所有文章
   $posts = get_posts(array(
-    'category' => get_query_var('cat')
+    'date_query' => array(
+      array(
+        'year'  => get_query_var('year'),
+        'month' => get_query_var('monthnum'),
+      )
+    )
   ));
-
-  // 遍历文章
   ?>
 
   <ul class="space-y-4">
