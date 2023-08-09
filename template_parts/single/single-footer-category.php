@@ -1,7 +1,7 @@
 <div class="font-pop space-y-8">
   <div class="flex items-center">
     <p class="font-bold">Category:</p>
-    <ul class="ml-3">
+    <ul class="ml-3 flex items-center space-x-2">
       <?php
       $categories = get_the_category();
       foreach ($categories as $category) {
@@ -18,7 +18,7 @@
     <p class="font-bold">Tags:</p>
     <?php $tags = get_the_tags(); ?>
     <?php if ($tags) : ?>
-      <ul class="ml-3">
+      <ul class="ml-3 flex items-center space-x-2">
         <?php
         foreach ($tags as $tag) {
           echo '<li><a class="border border-black p-1 text-sm hover:bg-black hover:text-white duration-100"
