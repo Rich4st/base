@@ -60,6 +60,22 @@
   text-decoration: underline;
 }
 
+.header4-nav li:hover {
+  color: #ff9900;
+}
+
+/* 分页样式 */
+.pagination li:first-child *:not(.current) {
+  margin-left: 16px;
+}
+
+.pagination .current {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+/* 分页样式 */
+
 #archive-sidebar li {
   text-decoration: underline;
 }
