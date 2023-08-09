@@ -42,3 +42,5 @@
 <footer class="bg-[#2b3440] pb-4 text-center">
   <a class="text-[#ff9900] underline text-lg font-pop" href="<?php echo home_url() ?>">Blog at Wordpress.com</a>
 </footer>
+
+<?php wp_footer(); ?>
