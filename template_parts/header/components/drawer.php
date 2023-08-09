@@ -17,6 +17,8 @@ $withClose = $args['with-close'] ?? false;
 $drawerClass = 'menu h-screen px-4 py-12 min-w-[20rem] bg-base-200 text-base-content font-rockwell ' . ($args['drawer-class'] ?? '');
 
 $menuClass = 'header-nav text-xl hover:text-gray-600 space-y-4 py-8 ' . ($args['menu-class'] ?? '');
+
+$menuIconClass = $args['menu-icon-class'] ?? 'w-6 h-6';
 ?>
 <div class="drawer lg:hidden">
   <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -35,7 +37,7 @@ $menuClass = 'header-nav text-xl hover:text-gray-600 space-y-4 py-8 ' . ($args['
       if ($withClose) : ?>
         <div id="menu-close" class="flex justify-end">
           <label for="my-drawer">
-            <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <svg class="<?php echo $menuIconClass; ?>" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
               <path fill="currentColor" d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" />
             </svg>
           </label>
