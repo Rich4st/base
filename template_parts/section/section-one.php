@@ -3,7 +3,7 @@
 /**
  * @description lottie 动态svg
  * 
- * @see 
+ * @see https://github.com/Rich4st/base/blob/develop/preview/section-one.jpg?raw=true
  * 
  */
 ?>
