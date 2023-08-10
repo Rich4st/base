@@ -6,11 +6,13 @@
  * @see https://github.com/Rich4st/base/blob/develop/preview/blog-1.jpg?raw=true
  * 
  */
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = array(
   'post_type' => 'post',
-  'posts_per_page' => $args['page-size'] ?? -1,
+  'posts_per_page' => $args['page-size'] ?? 4,
   'orderby' => $args['orderby'] ?? 'date',
   'order' => $args['order'] ?? 'DESC',
+  'paged' => $paged,
 );
 $all_posts = new WP_Query($args);
 ?>
@@ -78,4 +80,19 @@ $all_posts = new WP_Query($args);
   // 重置循环
   wp_reset_postdata();
   ?>
+  <ul class="pagination flex items-center space-x-4">
+    <li>
+      <?php
+      // 分页链接
+      echo paginate_links(array(
+        'total' => $all_posts->max_num_pages,
+        'current' => $paged,
+      ));
+      ?>
+    </li>
+
+    <li>total <?php echo $all_posts->max_num_pages ?> Page(s)</li>
+
+    <li><?php echo $all_posts->found_posts ?> post(s)</span>
+  </ul>
 </ul>

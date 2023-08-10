@@ -12,6 +12,7 @@ module.exports = {
         meshed: ['MeshedDisplayBlack', 'Georgia', 'Times', 'Times New Roman', 'serif'],
         meshedLight: ['MeshedDisplayLight', 'Georgia', 'Times', 'Times New Roman', 'serif'],
         news: ['Newsreader', 'Georgia', 'Times', 'Times New Roman', 'serif'],
+        pop: ['Poppins', 'Georgia', 'Times', 'Times New Roman', 'serif'],
       }
     },
   },

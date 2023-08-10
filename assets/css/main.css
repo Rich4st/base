@@ -39,6 +39,15 @@
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Light.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 .header-nav li {
   text-underline-offset: 0.3em;
 }
@@ -50,6 +59,22 @@
 .header-nav .current_page_item {
   text-decoration: underline;
 }
+
+.header4-nav li:hover {
+  color: #ff9900;
+}
+
+/* 分页样式 */
+.pagination li:first-child *:not(.current) {
+  margin-left: 16px;
+}
+
+.pagination .current {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+/* 分页样式 */
 
 #archive-sidebar li {
   text-decoration: underline;
