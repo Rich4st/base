@@ -59,7 +59,7 @@
           <?php endif; ?>
 
           <div class="my-4 px-4 font-pop">
-            <a class="text-xl font-extrabold hover:underline line-clamp-2 min-h-[2.75rem] text-center" href="<?php echo $post_link ?>" title="<?php echo $post_title; ?>">
+            <a class="md:text-xl font-extrabold hover:underline line-clamp-2 min-h-[2.75rem] text-center" href="<?php echo $post_link ?>" title="<?php echo $post_title; ?>">
               <?php echo $post_title; ?>
             </a>
             <a class="font-serif text-sm mt-2 hover:underline min-h-[2.5rem] line-clamp-2" href="<?php echo $post_link ?>" title="<?php echo $post_title; ?>">
