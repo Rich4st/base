@@ -64,7 +64,7 @@
   color: #ff9900;
 }
 
-/* 分页样式 */
+/* 博客分页样式 */
 .pagination li:first-child *:not(.current) {
   margin-left: 16px;
 }
@@ -74,7 +74,7 @@
   font-weight: bold;
 }
 
-/* 分页样式 */
+/* 博客分页样式 */
 
 #archive-sidebar li {
   text-decoration: underline;
@@ -85,12 +85,17 @@
   color: #0ea5e9
 }
 
-.swiper-slide img {
+/* section2 swiper */
+#default-swiper .swiper-slide img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
   max-height: 80vh;
   border-radius: 1rem;
-  
 }
+
+/* section7 swiper */
+/* #three-column-swiper .swiper-slide img {
+  height: 20rem;
+} */

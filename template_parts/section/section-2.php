@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="swiper mySwiper rounded-xl overflow-auto">
+<div id="default-swiper" class="swiper mySwiper default-swiper rounded-xl overflow-auto">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <a href="">
