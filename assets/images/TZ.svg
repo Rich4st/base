@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 72 48">
+	<title>Flag of Tanzania</title>
+	<clipPath id="c">
+		<path d="m0,0h73v48H0"/>
+	</clipPath>
+	<g clip-path="url(#c)">
+		<path fill="#1eb53a" d="m0,48V0h72"/>
+		<path fill="#00a3dd" d="m72,0v48H0"/>
+		<path stroke="#fcd116" stroke-width="19" d="m0,48L72,0"/>
+		<path stroke="#000" stroke-width="13" d="m0,48L72,0"/>
+	</g>
+</svg>
