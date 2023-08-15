@@ -8554,6 +8554,10 @@ details.collapse summary::-webkit-details-marker {
   top: 4rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -8580,6 +8584,10 @@ details.collapse summary::-webkit-details-marker {
 
 .z-\[9999\] {
   z-index: 9999;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .order-1 {
@@ -8726,6 +8734,10 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .box-border {
@@ -10494,6 +10506,10 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
