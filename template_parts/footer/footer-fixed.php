@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @description 底部固定footer
  * 
@@ -7,7 +8,7 @@
  */
 ?>
 <ul id="fixed-footer" class="flex items-center justify-between bg-black px-4 fixed z-40 bottom-0 w-screen 
-  text-white animate__animated animate__fadeInUp duration-200">
+  text-white animate__animated animate__fadeInUp duration-200 md:hidden">
   <li id="to-top" class="flex flex-col justify-center items-center">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
       <path fill="currentColor" d="m12 4.836l-6.207 6.207l1.414 1.414L12 7.664l4.793 4.793l1.414-1.414L12 4.836Zm0 5.65l-6.207 6.207l1.414 1.414L12 13.314l4.793 4.793l1.414-1.414L12 10.486Z" />
@@ -32,23 +33,26 @@
     if (document.readyState == "complete") {
       const fixedFooter = document.querySelector('#fixed-footer')
       const toTop = document.querySelector('#to-top')
-
-      window.addEventListener('scroll', function() {
-        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-        if (scrollTop > 50) {
-          fixedFooter.classList.remove('hidden')
-        } else {
-          fixedFooter.classList.add('hidden')
-        }
-      })
-
-      toTop.addEventListener('click', () => {
-        // scroll to top
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
+      const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+      console.log(screenWidth);
+      if (screenWidth <= 768) {
+        window.addEventListener('scroll', function() {
+          const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+          if (scrollTop > 50) {
+            fixedFooter.classList.remove('hidden')
+          } else {
+            fixedFooter.classList.add('hidden')
+          }
         })
-      })
+
+        toTop.addEventListener('click', () => {
+          // scroll to top
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          })
+        })
+      }
     }
   }
 </script>
