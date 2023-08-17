@@ -13,7 +13,7 @@
   <?php endif; ?>
 </article>
 
-<div id="m-comment" class="lg:max-w-3xl lg:mx-auto px-4 lg:px-0 space-y-8 btn btn-outline">
+<div id="m-comment" class="lg:max-w-3xl lg:mx-auto px-4 lg:px-0 space-y-8">
   <div class="pt-4 border-t">
     <?php comments_template() ?>
   </div>
