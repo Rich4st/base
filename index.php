@@ -2,8 +2,7 @@
 
 <main>
 
-  <h1 class="h-screen">content</h1>
-  <h1 class="h-screen">content</h1>
+  <h1>content</h1>
 
 </main>
 
