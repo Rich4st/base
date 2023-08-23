@@ -20,7 +20,7 @@ $all_posts = new WP_Query($args);
 ?>
 
 <div class="flex flex-col lg:flex-row lg:px-0">
-  <div class="shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-4 lg:mb-0 hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] duration-300 rounded-2xl" style="flex: 2;">
+  <div class="shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-4 h-48 lg:h-full lg:mb-0 hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] duration-300 rounded-2xl" style="flex: 2;">
     <?php if ($all_posts->have_posts()) : $all_posts->the_post(); ?>
       <?php
       // 输出文章中的第一张图片
@@ -39,13 +39,13 @@ $all_posts = new WP_Query($args);
       ?>
       <!-- <?php if ($first_img) : ?> -->
       <div class="block rounded-2xl" href="<?php echo $post_link; ?>">
-        <img class="rounded-2xl" src="<?php echo $first_img; ?>" alt="">
+        <img class="rounded-2xl max-h-[500px] w-full object-cover" src="<?php echo $first_img; ?>" alt="">
         <div class="p-4">
           <div class="flex items-end justify-between">
             <div class=" font-serif text-sm">
               <a class="text-xl line-clamp-2 min-h-[3.5rem] hover:underline" href="<?php echo $post_link; ?>"><?php the_title(); ?></a>
               <?php foreach ($post_category as $category) : ?>
-                <a class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
+                <a class="px-2 py-1 bg-gray-800 text-white hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
                   <?php echo $category->name; ?>
                 </a>
               <?php endforeach; ?>
@@ -93,7 +93,7 @@ $all_posts = new WP_Query($args);
                   <p><?php echo $post_title ?></p>
                 </a>
                 <?php foreach ($post_category as $category) : ?>
-                  <a class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
+                  <a class="px-2 py-1 bg-gray-800 text-white hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
                     <?php echo $category->name; ?>
                   </a>
                 <?php endforeach; ?>
