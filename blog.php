@@ -29,7 +29,9 @@
 
 <main class="lg:max-w-6xl lg:mx-auto">
 
-<h1>Blog</h1>
+  <section>
+    <?php get_template_part('template_parts/blog/blog-2') ?>
+  </section>
 
 </main>
 

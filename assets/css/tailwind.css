@@ -8534,6 +8534,10 @@ details.collapse summary::-webkit-details-marker {
   bottom: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -8554,10 +8558,6 @@ details.collapse summary::-webkit-details-marker {
   top: 4rem;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -8574,6 +8574,10 @@ details.collapse summary::-webkit-details-marker {
   z-index: 20;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -8584,10 +8588,6 @@ details.collapse summary::-webkit-details-marker {
 
 .z-\[9999\] {
   z-index: 9999;
-}
-
-.z-40 {
-  z-index: 40;
 }
 
 .order-1 {
@@ -8734,10 +8734,6 @@ details.collapse summary::-webkit-details-marker {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .box-border {
@@ -8928,8 +8924,24 @@ details.collapse summary::-webkit-details-marker {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
 .max-h-\[20rem\] {
   max-height: 20rem;
+}
+
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
+.max-h-\[80vh\] {
+  max-height: 80vh;
 }
 
 .max-h-full {
@@ -9034,6 +9046,10 @@ details.collapse summary::-webkit-details-marker {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .min-w-\[20rem\] {
@@ -10232,6 +10248,11 @@ details.collapse summary::-webkit-details-marker {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-indigo-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
@@ -10506,10 +10527,6 @@ details.collapse summary::-webkit-details-marker {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -12965,6 +12982,11 @@ details.collapse summary::-webkit-details-marker {
   color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
+.hover\:text-sky-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -12976,6 +12998,10 @@ details.collapse summary::-webkit-details-marker {
 
 .hover\:no-underline:hover {
   text-decoration-line: none;
+}
+
+.hover\:decoration-wavy:hover {
+  text-decoration-style: wavy;
 }
 
 .hover\:opacity-95:hover {
@@ -13296,6 +13322,10 @@ details.collapse summary::-webkit-details-marker {
     height: 1.5rem;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
   .lg\:w-1\/4 {
     width: 25%;
   }
@@ -13334,6 +13364,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:max-w-\[40rem\] {
     max-width: 40rem;
+  }
+
+  .lg\:max-w-\[50rem\] {
+    max-width: 50rem;
   }
 
   .lg\:-translate-x-1\/2 {
