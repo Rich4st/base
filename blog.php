@@ -30,7 +30,7 @@
 <main class="lg:max-w-6xl lg:mx-auto">
 
   <section>
-    <?php get_template_part('template_parts/blog/blog-2') ?>
+    <?php get_template_part('template_parts/blog/blog-3') ?>
   </section>
 
 </main>

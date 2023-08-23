@@ -13231,8 +13231,16 @@ details.collapse summary::-webkit-details-marker {
     display: none;
   }
 
+  .md\:h-56 {
+    height: 14rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:w-56 {
+    width: 14rem;
   }
 
   .md\:grid-cols-2 {
