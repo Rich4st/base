@@ -12,7 +12,7 @@
  */
 $args = array(
   'post_type' => 'post',
-  'posts_per_page' => $args['page-size'] ?? 3,
+  'posts_per_page' => $args['page-size'] ?? 4,
   'orderby' => $args['orderby'] ?? 'date',
   'order' => $args['order'] ?? 'DESC',
 );
@@ -43,9 +43,9 @@ $all_posts = new WP_Query($args);
         <div class="p-4">
           <div class="flex items-end justify-between">
             <div class=" font-serif text-sm">
-              <a class="text-xl line-clamp-2 min-h-[3.5rem] hover:underline" href="<?php echo $post_link; ?>"><?php the_title(); ?></a>
+              <a class="text-xl line-clamp-2 mb-4 min-h-[3.5rem] hover:underline" href="<?php echo $post_link; ?>"><?php the_title(); ?></a>
               <?php foreach ($post_category as $category) : ?>
-                <a class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
+                <a class="p-4 mt-4 bg-gray-200 hover:bg-gray-300 rounded-full mr-2 text-lg" href="<?php echo get_category_link($category->term_id); ?>">
                   <?php echo $category->name; ?>
                 </a>
               <?php endforeach; ?>
@@ -89,11 +89,11 @@ $all_posts = new WP_Query($args);
           <div class="p-4">
             <div class="flex items-end justify-between">
               <div class=" font-serif text-sm">
-                <a class="text-xl line-clamp-2 min-h-[3.5rem] hover:underline mb-1" href="$post_link">
+                <a class="text-xl line-clamp-2 mb-4 min-h-[3.5rem] hover:underline" href="$post_link">
                   <p><?php echo $post_title ?></p>
                 </a>
                 <?php foreach ($post_category as $category) : ?>
-                  <a class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
+                  <a class="p-4 mt-4 bg-gray-200 hover:bg-gray-300 rounded-full mr-2 text-lg" href="<?php echo get_category_link($category->term_id); ?>">
                     <?php echo $category->name; ?>
                   </a>
                 <?php endforeach; ?>

@@ -10,24 +10,16 @@
 <div id="default-swiper" class="swiper mySwiper default-swiper rounded-xl overflow-auto">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
-      <a href="">
-        <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_1.jpg" alt="">
-      </a>
+      <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_1.jpg" alt="">
     </div>
     <div class="swiper-slide">
-      <a href="">
-        <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_2.jpg" alt="">
-      </a>
+      <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_2.jpg" alt="">
     </div>
     <div class="swiper-slide">
-      <a href="">
-        <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_3.png" alt="">
-      </a>
+      <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_3.png" alt="">
     </div>
     <div class="swiper-slide">
-      <a href="">
-        <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_4.jpg" alt="">
-      </a>
+      <img class="relative left-1/2 -translate-x-1/2 w-screen max-h-[80vh]" src="<?php echo get_template_directory_uri() ?>/assets/images/swiper_4.jpg" alt="">
     </div>
   </div>
   <div class="swiper-pagination"></div>
