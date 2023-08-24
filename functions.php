@@ -1,17 +1,17 @@
 <?php
 
-function widgets_init() {
-  register_sidebar( array(
-    'name' => 'Sidebar',
-    'id' => 'sidebar',
-    'before_widget' => '<div class="sidebar-module">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4>',
-    'after_title' => '</h4>'
-  ) );
+function enqueue_custom_assets() {
+  // 加载样式文件
+  wp_enqueue_style('custom-styles', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+
+  // 加载脚本文件
+  wp_enqueue_script('custom-script', get_template_directory_uri() . '/script.js', array('jquery'), '1.0', true);
 }
 
-add_action('widgets_init', 'widgets_init');
+// 队列加载JS和CSS文件
+add_action('wp_enqueue_scripts', 'enqueue_custom_assets');
+
+// 添加缩略图支持
 add_theme_support('post-thumbnails');
 
 ?>

@@ -1,0 +1,10 @@
+
+/* section2 swiper */
+#default-swiper .swiper-slide img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-height: 80vh;
+  border-radius: 1rem;
+}

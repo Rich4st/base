@@ -18,11 +18,11 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php bloginfo('url') ?>">
   <meta property="og:site_name" content="<?php bloginfo('name') ?>">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/tailwind.css">
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/tailwind.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.min.css">
-  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script> -->
   <?php wp_head(); ?>
 </head>
 <?php get_header(); ?>

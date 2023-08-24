@@ -1,0 +1,25 @@
+.header-nav li {
+  text-underline-offset: 0.7em;
+  padding: 4px 0;
+}
+
+.header-nav li a{
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.header-nav li:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.2em;
+  background-color: #155824;
+  text-decoration-color: #00a826;
+}
+
+.header-nav .current_page_item {
+  text-decoration: underline;
+}
+
+.header-nav {
+  font-family: 'Poppins', 'Georgia', 'Times', 'Times New Roman', 'serif';
+}

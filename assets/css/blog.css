@@ -1,0 +1,11 @@
+/* 博客分页样式 */
+.pagination li:first-child *:not(.current) {
+  margin-left: 16px;
+}
+
+.pagination .current {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+/* 博客分页样式 */
