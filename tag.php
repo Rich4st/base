@@ -23,9 +23,11 @@
 
 <?php get_header(); ?>
 
-<main>
+<main class="lg:max-w-6xl mx-auto">
 
-  <h1>content</h1>
+  <section>
+    <?php get_template_part('template_parts/base/base-breadcrumbs2') ?>
+  </section>
 
 </main>
 

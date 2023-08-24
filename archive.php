@@ -7,35 +7,34 @@
  * 
  */
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<?php
-get_header();
-
-$cat = get_category(get_query_var('cat'));
-
-$breadcrumbs = array(
-  'breadcrumbs' => array(
-    array(
-      'name' => 'Home',
-      'link' => home_url()
-    ),
-    array(
-      'name' => $cat->name ?? 'blog',
-      'link' => (get_category_link($cat->term_id ?? '')) ?? '/blog'
-    )
-  )
-)
-
-?>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php bloginfo('name'); ?> | <?php the_title() ?></title>
+  <meta name="description" content="capalot's blog">
+  <meta name="keywords" content="blog,博客">
+  <meta name="og:title" content="<?php bloginfo('name'); ?>-<?php the_title() ?>">
+  <meta name="og:description" content="capalot's blog">
+  <meta name="og:keywords" content="blog,博客">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php bloginfo('url') ?>">
+  <meta property="og:site_name" content="<?php bloginfo('name') ?>">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/tailwind.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.min.css">
+  <script src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
+  <?php wp_head(); ?>
+</head>
+<?php get_header(); ?>
 
 <main>
 
   <section class="px-4 pb-8 lg:max-w-6xl lg:mx-auto">
-    <?php
-    $cat = get_category(get_query_var('cat'));
-
-    get_template_part('template_parts/base/base-breadcrumbs', '', $breadcrumbs)
-    ?>
+    <?php get_template_part('template_parts/base/base-breadcrumbs2') ?>
 
     <?php
     // 查询出当前归档日期下的所有文章

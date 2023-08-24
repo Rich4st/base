@@ -1,9 +1,9 @@
 <?php
 
 /**
- * @description 左右布局显示文章图片、标题及分类
+ * @description 上下布局显示文章图片、标题及分类
  * 
- * @see https://github.com/Rich4st/base/blob/develop/preview/post-pool4.jpg?raw=true
+ * @see https://github.com/Rich4st/base/blob/develop/preview/post-pool7.jpg?raw=true
  * 
  * @param array $args
  * @param string $args['page-size'] 每页显示的文章数量
@@ -12,15 +12,15 @@
  */
 $args = array(
   'post_type' => 'post',
-  'posts_per_page' => $args['page-size'] ?? 3,
+  'posts_per_page' => $args['page-size'] ?? 4,
   'orderby' => $args['orderby'] ?? 'date',
   'order' => $args['order'] ?? 'DESC',
 );
 $all_posts = new WP_Query($args);
 ?>
 
-<div class="flex flex-col lg:flex-row lg:px-0">
-  <div class="shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-4 h-48 lg:h-full lg:mb-0 hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] duration-300 rounded-2xl" style="flex: 2;">
+<div>
+  <div class="shadow-[0_8px_30px_rgb(0,0,0,0.12)] mb-4 lg:mb-0 hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] duration-300 rounded-2xl" style="flex: 2;">
     <?php if ($all_posts->have_posts()) : $all_posts->the_post(); ?>
       <?php
       // 输出文章中的第一张图片
@@ -39,13 +39,13 @@ $all_posts = new WP_Query($args);
       ?>
       <!-- <?php if ($first_img) : ?> -->
       <div class="block rounded-2xl" href="<?php echo $post_link; ?>">
-        <img class="rounded-2xl max-h-[500px] w-full object-cover" src="<?php echo $first_img; ?>" alt="">
+        <img class="rounded-2xl h-72 w-full object-cover" src="<?php echo $first_img; ?>" alt="">
         <div class="p-4">
           <div class="flex items-end justify-between">
             <div class=" font-serif text-sm">
-              <a class="text-xl line-clamp-2 min-h-[3.5rem] hover:underline" href="<?php echo $post_link; ?>"><?php the_title(); ?></a>
+              <a class="text-xl line-clamp-2 mb-4 min-h-[3.5rem] hover:underline" href="<?php echo $post_link; ?>"><?php the_title(); ?></a>
               <?php foreach ($post_category as $category) : ?>
-                <a class="px-2 py-1 bg-gray-800 text-white hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
+                <a class="p-4 mt-4 bg-gray-200 hover:bg-gray-300 rounded-full mr-2 text-lg" href="<?php echo get_category_link($category->term_id); ?>">
                   <?php echo $category->name; ?>
                 </a>
               <?php endforeach; ?>
@@ -62,7 +62,7 @@ $all_posts = new WP_Query($args);
     <?php endif; ?>
   </div>
 
-  <ul class="lg:ml-4 space-y-4" style="flex: 1;">
+  <ul class="space-x-4 grid grid-cols-1 lg:grid-cols-3 mt-4" style="flex: 1;">
     <?php if ($all_posts->have_posts()) : ?>
       <?php while ($all_posts->have_posts()) : $all_posts->the_post(); ?>
         <li class="shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] duration-300 rounded-2xl">
@@ -89,11 +89,11 @@ $all_posts = new WP_Query($args);
           <div class="p-4">
             <div class="flex items-end justify-between">
               <div class=" font-serif text-sm">
-                <a class="text-xl line-clamp-2 min-h-[3.5rem] hover:underline mb-1" href="$post_link">
+                <a class="text-xl line-clamp-2 mb-4 min-h-[3.5rem] hover:underline" href="$post_link">
                   <p><?php echo $post_title ?></p>
                 </a>
                 <?php foreach ($post_category as $category) : ?>
-                  <a class="px-2 py-1 bg-gray-800 text-white hover:bg-gray-300 rounded-full mr-2" href="<?php echo get_category_link($category->term_id); ?>">
+                  <a class="p-4 mt-4 bg-gray-200 hover:bg-gray-300 rounded-full mr-2 text-lg" href="<?php echo get_category_link($category->term_id); ?>">
                     <?php echo $category->name; ?>
                   </a>
                 <?php endforeach; ?>

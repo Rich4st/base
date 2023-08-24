@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @description 移动端头部导航栏菜单弹出层
  * 
@@ -23,8 +24,8 @@ $menuIconClass = $args['menu-icon-class'] ?? 'w-6 h-6';
 <div class="drawer lg:hidden">
   <input id="my-drawer" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content">
-    <label for="my-drawer">
-      <svg class="lg:hidden" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <label for="my-drawer" class="flex justify-center">
+      <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <rect x="4" y="7.5" width="16" height="1.5"></rect>
         <rect x="4" y="15" width="16" height="1.5"></rect>
       </svg>
@@ -38,7 +39,7 @@ $menuIconClass = $args['menu-icon-class'] ?? 'w-6 h-6';
         <div id="menu-close" class="flex justify-end">
           <label for="my-drawer">
             <svg class="<?php echo $menuIconClass; ?>" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" />
+              <path d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" />
             </svg>
           </label>
         </div>

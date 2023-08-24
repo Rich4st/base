@@ -8,7 +8,7 @@
  * 
  */
 
-$class = 'header-nav hidden lg:flex items-center space-x-4 mr-8 text-lg hover:text-gray-600 '.($args['extra-class'] ?? '')
+$class = 'header-nav hidden lg:flex items-center space-x-4 mr-8 text-lg '.($args['extra-class'] ?? '')
 ?>
 
 <div>

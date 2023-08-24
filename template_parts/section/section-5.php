@@ -3,10 +3,12 @@
 /**
  * @description lottie 动态svg
  * 
- * @see 
+ * @see https://github.com/Rich4st/base/blob/develop/preview/section-5.jpg?raw=true
  * 
  */
 ?>
+<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
 <ul class="grid grid-cols-1 md:grid-cols-3 border-t">
   <li>
     <a class="flex items-center" href="">

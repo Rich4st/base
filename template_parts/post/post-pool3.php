@@ -66,7 +66,7 @@ $all_posts = new WP_Query($args);
           </a>
           <p class="text-xs text-gray-400 hover:text-[#ed1f84]">
             <a href="">
-              <?php echo the_author() ?>
+              <?php the_author() ?>
             </a>
           </p>
         </div>
