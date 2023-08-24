@@ -8880,6 +8880,10 @@ details.collapse summary::-webkit-details-marker {
   height: 1.25rem;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -8922,14 +8926,6 @@ details.collapse summary::-webkit-details-marker {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .max-h-\[20rem\] {
@@ -9020,6 +9016,10 @@ details.collapse summary::-webkit-details-marker {
   width: 13rem;
 }
 
+.w-56 {
+  width: 14rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -9046,10 +9046,6 @@ details.collapse summary::-webkit-details-marker {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-56 {
-  width: 14rem;
 }
 
 .min-w-\[20rem\] {
@@ -13269,6 +13265,10 @@ details.collapse summary::-webkit-details-marker {
     justify-self: end;
   }
 
+  .md\:border-none {
+    border-style: none;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -13378,6 +13378,10 @@ details.collapse summary::-webkit-details-marker {
     max-width: 50rem;
   }
 
+  .lg\:max-w-\[90rem\] {
+    max-width: 90rem;
+  }
+
   .lg\:-translate-x-1\/2 {
     --tw-translate-x: -50%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -13461,6 +13465,12 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 1280px) {
   .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
